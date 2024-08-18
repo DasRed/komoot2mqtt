@@ -1,0 +1,73 @@
+{
+    "name": "@dasred/komoot2mqtt",
+    "version": "1.0.2",
+    "main": "src/index.js",
+    "type": "module",
+    "author": "DasRed",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DasRed/komoot2mqtt/issues"
+    },
+    "homepage": "https://github.com/DasRed/komoot2mqtt",
+    "engines": {
+        "node": ">=22.6.0",
+        "npm": ">=10.8.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DasRed/komoot2mqtt.git"
+    },
+    "files": [
+        "src/*"
+    ],
+    "dependencies": {
+        "@dasred/komoot-client": "github:dasred/komoot-client#semver:^1.0.0",
+        "command-line-args": "^6.0.0",
+        "command-line-usage": "^7.0.3",
+        "dotenv": "^16.4.5",
+        "mqtt": "^5.10.0",
+        "mysql2": "^3.11.0",
+        "pino": "^9.3.2",
+        "pino-pretty": "^11.2.2"
+    },
+    "devDependencies": {
+        "@semantic-release/commit-analyzer": "^13.0.0",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^10.1.4",
+        "@semantic-release/npm": "^12.0.1",
+        "semantic-release": "^24.0.0",
+        "semantic-release-cli": "^5.4.6"
+    },
+    "scripts": {
+        "start": "node ./src/index.js",
+        "semantic-release": "semantic-release"
+    },
+    "publishConfig": {
+        "access": "restricted",
+        "registry": "https://npm.pkg.github.com"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": false
+                }
+            ],
+            [
+                "@semantic-release/git",
+                {
+                    "assets": [
+                        "package.json",
+                        "package-lock.json"
+                    ]
+                }
+            ],
+            "@semantic-release/github"
+        ]
+    }
+}
