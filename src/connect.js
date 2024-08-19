@@ -53,6 +53,5 @@ export default async function connect() {
     client.publishHA  = (topic, payload) => publishHA(client, topic, payload);
     await client.publishK2M(`bridge/state`, {state: 'online'});
 
-
     return client;
 }

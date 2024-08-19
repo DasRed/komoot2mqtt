@@ -19,8 +19,10 @@ logger.info('connection to mqtt server established');
 
 // publish on init
 const komootData = await komoot();
-await publish(client, komootData);
-logger.info('first publish done');
+if (config.publishDisabled === false) {
+    await publish(client, komootData);
+    logger.info('first publish done');
+}
 
 // import historical data
 if (config.homeAssistantDatabaseImportHistoricalData === true) {
@@ -29,9 +31,9 @@ if (config.homeAssistantDatabaseImportHistoricalData === true) {
 }
 
 // don't to it continuously
-if (config.publishAndStop === true) {
+if (config.intervalDisabled === true) {
     await client.endAsync();
-    logger.info('publish and stop detected. Exiting');
+    logger.info('Interval is disabled. Exiting');
     process.exit(0);
 }
 
