@@ -3,7 +3,7 @@ load: nodeProject.jsonnet
 data:
   node: 22
   port: ''
-  deployToHost: eros.dasred.de
+  deployToHost: 'eros.dasred.de'
   environmentVariables: '["K2M_KOMOOT_EMAIL", "K2M_KOMOOT_PASSWORD", "K2M_MQTT_HOST", "K2M_MQTT_USER", "K2M_MQTT_PASSWORD", "K2M_FILTER_SPORT", "K2M_FILTER_AFTER_DATE"]'
   parameters: ''
   dockerName: ''
