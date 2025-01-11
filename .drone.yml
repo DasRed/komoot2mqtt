@@ -13,7 +13,6 @@ data:
                   "K2M_FILTER_AFTER_DATE"
               ],
               "docker": {
-                  "host": "eros",
                   "labels": {
                       "grafana.display": true,
                       "grafana.name": "Komoot 2 MQTT"
