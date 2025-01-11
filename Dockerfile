@@ -11,5 +11,11 @@ COPY ./package-lock.json /var/www/package-lock.json
 
 ENV NODE_ENV=production
 
-SHELL ["/bin/sh", "-c"]
-CMD npm install --omit=dev && npm start
+COPY --chmod=755 <<EOT /entrypoint.sh
+#!/usr/bin/env bash
+set -e
+npm install --omit=dev
+npm start
+EOT
+
+ENTRYPOINT ["/entrypoint.sh"]
