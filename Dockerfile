@@ -11,4 +11,5 @@ COPY ./package-lock.json /var/www/package-lock.json
 
 ENV NODE_ENV=production
 
+SHELL ["/bin/sh", "-c"]
 CMD npm install --omit=dev && npm start
