@@ -7,3 +7,7 @@ data:
   environmentVariables: '["K2M_KOMOOT_EMAIL", "K2M_KOMOOT_PASSWORD", "K2M_MQTT_HOST", "K2M_MQTT_USER", "K2M_MQTT_PASSWORD", "K2M_FILTER_SPORT", "K2M_FILTER_AFTER_DATE"]'
   parameters: ''
   dockerName: ''
+  docker:
+    labels:
+      - grafana.display: true
+      - grafana.name: Komoot 2 MQTT
