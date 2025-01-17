@@ -15,7 +15,9 @@ data:
               "docker": {
                   "labels": {
                       "grafana.display": true,
-                      "grafana.name": "Komoot 2 MQTT"
+                      "grafana.name": "Komoot 2 MQTT",
+                      "homeassistant.enable": true,
+                      "homeassistant.device_name": "Komoot 2 MQTT"
                   }
               }
           }
