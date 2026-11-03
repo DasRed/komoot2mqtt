@@ -1,21 +1,13 @@
-FROM node:22-alpine
-
-WORKDIR /var/www
-
-RUN mkdir -p /var/www/src
-COPY ./src /var/www/src
-COPY ./.env /var/www/.env
-
-COPY ./package.json /var/www/package.json
-COPY ./package-lock.json /var/www/package-lock.json
+FROM node:26-alpine
 
 ENV NODE_ENV=production
 
-COPY --chmod=755 <<EOT /entrypoint.sh
-#!/usr/bin/env sh
-set -e
-npm install --omit=dev
-npm start
-EOT
+WORKDIR /var/www
 
-ENTRYPOINT ["/entrypoint.sh"]
+COPY ./src /var/www/src
+COPY ./package.json /var/www/package.json
+COPY ./package-lock.json /var/www/package-lock.json
+
+RUN npm ci --omit=dev
+
+CMD ["npm", "start"]
