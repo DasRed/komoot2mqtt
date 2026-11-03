@@ -45,4 +45,3 @@ K2M_MQTT_USER=roflcopter
 K2M_MQTT_PASSWORD=lolololololol
 K2M_MQTT_BASE_TOPIC=komoot2mqtt
 ```
-
