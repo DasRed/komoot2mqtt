@@ -16,6 +16,9 @@ jobs:
   pipeline:
     uses: DasRed/github-workflows/.github/workflows/node-docker.yml@v1
     secrets:
+      dockhand-host: ${{ secrets.DOCKHAND_HOST }}
       dockhand-token: ${{ secrets.DOCKHAND_TOKEN }}
+      homeassistant-webhook-url: ${{ secrets.HOMEASSISTANT_WEBHOOK_URL }}
     with:
-      dockhand-environment: eros
+      environment: eros
+
