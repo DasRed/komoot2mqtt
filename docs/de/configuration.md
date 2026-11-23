@@ -1,6 +1,6 @@
 ---
 title: Konfiguration
-description: Alle Umgebungsvariablen von komoot2mqtt für komoot, MQTT, Ablauf, Home Assistant und den Datenbank-Import.
+description: Alle Umgebungsvariablen von komoot2mqtt mit Standardwerten, für das komoot-Konto, den MQTT-Broker, den Ablauf, Home Assistant und den Import in die Datenbank.
 order: 20
 slug: konfiguration
 section: Einrichtung

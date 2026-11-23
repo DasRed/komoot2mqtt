@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Run komoot2mqtt as a Docker container from the GitHub Container Registry or locally with Node.js.
+description: Run komoot2mqtt as a Docker container from the GitHub Container Registry, with Docker Compose or docker run, or run it locally with Node.js instead.
 order: 10
 slug: installation
 section: Getting started

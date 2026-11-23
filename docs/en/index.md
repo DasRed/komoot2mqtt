@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Service that polls your komoot tours regularly and sends statistics and your latest tour to Home Assistant via MQTT.
+description: Service that polls your komoot tours regularly and sends statistics and your latest tour to Home Assistant via MQTT. How it works, status and related projects.
 order: 0
 section: Getting started
 ---

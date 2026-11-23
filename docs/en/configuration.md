@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: All environment variables of komoot2mqtt for komoot, MQTT, scheduling, Home Assistant and the database import.
+description: All environment variables of komoot2mqtt with their defaults, for the komoot account, the MQTT broker, scheduling, Home Assistant and the database import.
 order: 20
 slug: configuration
 section: Setup

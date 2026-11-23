@@ -1,6 +1,6 @@
 ---
 title: MQTT
-description: All topics komoot2mqtt publishes, with the message structure and units.
+description: All MQTT topics komoot2mqtt publishes, with message structure, units and examples, plus availability and when values are sent again to your broker.
 order: 30
 slug: mqtt
 section: Reference

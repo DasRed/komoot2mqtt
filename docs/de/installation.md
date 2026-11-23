@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: komoot2mqtt als Docker-Container aus der GitHub Container Registry starten oder lokal mit Node.js ausführen.
+description: komoot2mqtt als Docker-Container aus der GitHub Container Registry starten, per Docker Compose oder docker run, oder lokal mit Node.js ausführen.
 order: 10
 slug: installation
 section: Einstieg

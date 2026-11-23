@@ -1,6 +1,6 @@
 ---
 title: MQTT
-description: Alle Topics, die komoot2mqtt veröffentlicht, mit Aufbau der Nachrichten und Einheiten.
+description: Alle MQTT-Topics, die komoot2mqtt veröffentlicht, mit Aufbau der Nachrichten, Einheiten und Beispielen, dazu Verfügbarkeit und wann Werte neu gesendet werden.
 order: 30
 slug: mqtt
 section: Referenz
