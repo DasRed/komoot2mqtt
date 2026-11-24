@@ -14,7 +14,7 @@ permissions:
 
 jobs:
   pipeline:
-    uses: DasRed/github-workflows/.github/workflows/node-docker.yml@v1
+    uses: DasRed/github-workflows/.github/workflows/node-docker.yml@v2
     secrets:
       dockhand-host: ${{ secrets.DOCKHAND_HOST }}
       dockhand-token: ${{ secrets.DOCKHAND_TOKEN }}
