@@ -1,3 +1,9 @@
+## [1.2.4](https://github.com/DasRed/komoot2mqtt/compare/v1.2.3...v1.2.4) (2026-11-24)
+
+### Bug Fixes
+
+* homepage fixed ([1dc42dc](https://github.com/DasRed/komoot2mqtt/commit/1dc42dc43d9dd606ab744474f25d64702cbae234))
+
 ## [1.2.3](https://github.com/DasRed/komoot2mqtt/compare/v1.2.2...v1.2.3) (2026-11-24)
 
 ### Bug Fixes
